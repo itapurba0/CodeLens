@@ -5,7 +5,7 @@ from typing import Any
 import httpx
 
 
-async def chat(messages: list[dict[str, str]], model: str = "deepseek-chat") -> Any:
+async def chat(messages: list[dict[str, str]], model: str = "deepseek/deepseek-flash-latest") -> Any:
     base_url = os.environ.get("OPENAI_BASE_URL", "https://api.deepseek.com/v1")
     api_key = os.environ.get("OPENAI_API_KEY", "")
 
