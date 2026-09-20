@@ -1,7 +1,7 @@
-from agents.syntax_bug import SyntaxBugAgent
-from agents.security import SecurityAgent
 from agents.performance import PerformanceAgent
+from agents.security import SecurityAgent
 from agents.style import StyleAgent
+from agents.syntax_bug import SyntaxBugAgent
 
 AGENT_MAP = {
     "syntax": SyntaxBugAgent,

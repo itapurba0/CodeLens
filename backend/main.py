@@ -1,7 +1,10 @@
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from routers.review import router as review_router
+
+load_dotenv()
 
 app = FastAPI(title="CodeLens API", version="0.1.0")
 

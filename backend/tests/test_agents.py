@@ -1,10 +1,10 @@
 import pytest
-from schemas.review import FindingSeverity
-from agents.syntax_bug import SyntaxBugAgent
-from agents.security import SecurityAgent
+
 from agents.performance import PerformanceAgent
+from agents.security import SecurityAgent
 from agents.style import StyleAgent
-from schemas.review import DiffChunk
+from agents.syntax_bug import SyntaxBugAgent
+from schemas.review import DiffChunk, FindingSeverity
 
 
 @pytest.fixture
