@@ -25,7 +25,7 @@ class Agent(ABC):
             {"role": "user", "content": diff_text},
         ]
 
-        model = os.environ.get("OPENAI_MODEL", "deepseek-chat")
+        model = os.environ.get("OPENAI_MODEL", "deepseek/deepseek-flash-latest")
         try:
             data = await chat(messages, model=model)
             return self._parse_findings(data, chunks)
